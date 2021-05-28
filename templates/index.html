@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="short_url hidden">
+            <p></p>
+            <p class="green hidden">Copied to clipboard!</p>
+        </div>
+        <div class="input_pad">
+            <input type="text" class="input_text left_rounded" placeholder="Paste your link here.">
+            <input type="button" class="input_text btn right_rounded" value="get short">
+         </div>   
+    </div>
+{% endblock %}
