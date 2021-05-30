@@ -15,7 +15,7 @@ window.onload = () => {
     });
 
     button.addEventListener('click', (event) => {
-        fetch('/', {
+        fetch('/api/v0', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 'url': input.value })
